@@ -50,7 +50,7 @@ require_once "core/init.php";
 <body>
 
     <center><p>Data Menu</p></center>
-    <center><a href="tambah.php">+ &nbsp; Tambah Produk </a></center>
+    <center><a href="tambah_menu.php">+ &nbsp; Tambah Produk </a></center>
     <br>
     <table>
         <thead>
@@ -83,7 +83,7 @@ require_once "core/init.php";
                 <td>Rp <?php echo number_format($row['harga'], 0,',','.'); ?></td>
                 <td><img style="width: 120px;" src="gambar/<?php echo $row['gambar_menu']; ?>"></td>
                 <td>
-                    <a href="edit_produk.php?id=<?php echo $row['id']; ?>">Edit</a>
+                    <a href="proses_edit.php?id=<?php echo $row['id']; ?>">Edit</a>
                     <a href="proses_hapus.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Anda yakin ingin menghapus data ini?')">Hapus</a>
                 </td>
             </tr>

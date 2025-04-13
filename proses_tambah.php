@@ -1,6 +1,6 @@
-<?php
+    <?php
 
-require_once "core/init.php";
+    require_once "core/init.php";
 
 $nama_menu = $_POST['nama_menu'];
 $deskripsi = $_POST['deskripsi'];
