@@ -34,8 +34,7 @@ if(in_array($ekstensi, $ekstensi_diperbolehkan)=== true ){
     }
 
     }else{
-        $query = "UPDATE menu SET nama_menu = '$nama_menu', deskripsi = '$deskripsi', harga = '$harga'";
-            $query = " WHERE id = '$id'";
+        $query = "UPDATE menu SET nama_menu = '$nama_menu', deskripsi = '$deskripsi', harga = '$harga' WHERE id = '$id'";
             $result = mysqli_query($link, $query);
 
             if (!$result){

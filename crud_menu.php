@@ -49,7 +49,7 @@ require_once "core/init.php";
 </head>
 <body>
 
-    <center><p>Data Menu</p></center>
+    <center><h1>Data Menu</h1></center>
     <center><a href="tambah_menu.php">+ &nbsp; Tambah Produk </a></center>
     <br>
     <table>
@@ -79,11 +79,11 @@ require_once "core/init.php";
             <tr>
                 <td><?php echo $no; ?></td>
                 <td><?php echo $row['nama_menu']; ?></td>
-                <td><?php echo substr($row['deskripsi'], 0, 20);?>...</td>
+                <td><?php echo substr($row['deskripsi'], 0, 30);?>...</td>
                 <td>Rp <?php echo number_format($row['harga'], 0,',','.'); ?></td>
                 <td><img style="width: 120px;" src="gambar/<?php echo $row['gambar_menu']; ?>"></td>
                 <td>
-                    <a href="proses_edit.php?id=<?php echo $row['id']; ?>">Edit</a>
+                    <a href="edit_menu.php?id=<?php echo $row['id']; ?>">Edit</a>
                     <a href="proses_hapus.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Anda yakin ingin menghapus data ini?')">Hapus</a>
                 </td>
             </tr>
