@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
         
        if (cek_data($nama,$pass)){
         $_SESSION ['user']=$nama;
-        header('location:index.html');
+        header('location:admin.php');
        }else{
         echo 'Username atau Password salah';
        }

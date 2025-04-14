@@ -25,8 +25,8 @@
             <span>Customer</span></a>
         </li>
         <li>
-          <a href=""> <span class="las la-clipboard-list"></span>
-            <span>Menu makanan</span></a>
+          <a href="crud_menu.php"> <span class="las la-clipboard-list"></span>
+            <span>Menu</span></a>
         </li>
         <li>
           <a href=""> <span class="las la-shopping-bag"></span>
